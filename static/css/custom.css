@@ -72,7 +72,7 @@ html[data-theme='light'] {
   --ls-block-ref-link-text-color: var(--ls-link-text-color);
   --ls-search-background-color: var(--ls-secondary-background-color);
   --ls-page-inline-code-color: var(--ls-primary-text-color);
-  --ls-page-inline-code-bg-color: rgba(0, 0, 0, 0.2);
+  --ls-page-inline-code-bg-color: rgba(185, 185, 185, 0.2);
   --ls-page-title-size: 2rem;
   --ls-scrollbar-foreground-color: rgba(0, 0, 0, 0.2);
   --ls-scrollbar-background-color: var(--ls-primary-background-color);
@@ -83,7 +83,7 @@ html[data-theme='light'] {
   --ls-a-chosen-bg: var(--ls-secondary-background-color);
   --ls-selection-background-color: rgba(0, 0, 0, 0.1);
 
-}
+} 
 
 /* === Custom colors in buttons, hints etc ===  */
 
@@ -140,9 +140,10 @@ mark {
   border-radius: 3px;
   font-size: 14px;
 }
+
 .white-theme mark {
   background: rgba(0, 0, 0, 0.5);
-}
+} 
 
 /* fix color page-reference when mark text */
 mark .page-ref, mark .page-reference .bracket {
@@ -158,19 +159,16 @@ mark .page-ref, mark .page-reference .bracket {
 .dark-theme .form-checkbox {
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
+
 .white-theme .form-checkbox {
   border: 1px solid rgba(0, 0, 0, 0.5);
-}
+} 
 
 .dark-theme .form-checkbox:checked {
   border-color: rgba(255, 255, 255, 0.5);
   background-color: var(--ls-primary-background-color);
 }
 
-.white-theme .form-checkbox:checked {
-  border-color: rgba(0, 0, 0, 0.5);
-  background-color: var(--ls-link-text-color);
-}
 
 .dark-theme .form-checkbox:focus {
   border-color: rgba(255, 255, 255, 0.5);
@@ -184,6 +182,12 @@ mark .page-ref, mark .page-reference .bracket {
 .form-checkbox:hover {
   transform: scale(1.2);
 }
+
+.white-theme .form-checkbox:checked {
+  border-color: rgba(0, 0, 0, 0.5);
+  background-color: var(--ls-link-text-color);
+} 
+
 
 /* === Marker for Task Status === */
 .marker-switch {
@@ -208,7 +212,7 @@ mark .page-ref, mark .page-reference .bracket {
   color: rgba(0, 0, 0, 0.5);
 }
 
-/* === Zoom Image on hover === */
+ === Zoom Image on hover === */
 .block-content img {
   max-width: 100%;
   cursor: default;
